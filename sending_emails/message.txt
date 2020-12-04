@@ -1,0 +1,6 @@
+Dear ${RECEPIENT},
+this is an automated message from your
+python programmer, have a nice day.
+
+Yours Sincerly,
+Mr Python
