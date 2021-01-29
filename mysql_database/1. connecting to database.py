@@ -12,7 +12,7 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   password="backtrack",
-  database="testdb"
+ # database="testdb"
 )
 mycursor = mydb.cursor()
 print(mydb)
