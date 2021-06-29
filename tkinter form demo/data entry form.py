@@ -42,7 +42,7 @@ name_label = tk.Label(win, text = "Name :", fg = "Blue", height = 2)
 name_label.grid(row = 1, column = 0, sticky = tk.W)
 
 name_entry = tk.Entry(win, width = 30, textvariable = name)
-name_entry.grid(row = 1, column = 1, sticky = tk.W)
+name_entry.grid(row = 1, column = 1, sticky = tk.W, columnspan = 2)
 
 ####################################
 email = tk.StringVar()
@@ -51,7 +51,7 @@ name_label = tk.Label(win, text = "Email :", fg = "Blue", height = 2)
 name_label.grid(row = 2, column = 0, sticky = tk.W)
 
 name_entry = tk.Entry(win, width = 30, textvariable = email)
-name_entry.grid(row = 2, column = 1, sticky = tk.W)
+name_entry.grid(row = 2, column = 1, sticky = tk.W, columnspan = 2)
 
 ####################################
 language = tk.StringVar()
@@ -61,7 +61,7 @@ language_label.grid(row = 3, column = 0, sticky = tk.W)
 
 language_list =  ["C", "C++", "Java", "Python"]
 language_selection = ttk.Combobox(win, values = language_list, width = 27, height = 2, textvariable = language)
-language_selection.grid(row = 3, column = 1, sticky = tk.W)
+language_selection.grid(row = 3, column = 1, sticky = tk.W, columnspan = 2)
 
 ####################################
 gender_var = tk.IntVar()
@@ -88,10 +88,10 @@ softwareCheckbutton2 = tk.Checkbutton(win, text = "Spyder", variable = spyder)
 softwareCheckbutton3 = tk.Checkbutton(win, text = "Jupyter Lab", variable = lab)
 softwareCheckbutton4 = tk.Checkbutton(win, text = "Jupyter Notebook", variable = notebook)
 
-softwareCheckbutton1.grid(row = 5, column = 1)
-softwareCheckbutton2.grid(row = 5, column = 2)
-softwareCheckbutton3.grid(row = 5, column = 3)
-softwareCheckbutton4.grid(row = 5, column = 4)
+softwareCheckbutton1.grid(row = 5, column = 1, sticky = tk.W)
+softwareCheckbutton2.grid(row = 5, column = 2, sticky = tk.W)
+softwareCheckbutton3.grid(row = 5, column = 3, sticky = tk.W)
+softwareCheckbutton4.grid(row = 5, column = 4, sticky = tk.W)
 ######################################
 
 submit_button = tk.Button(win, text = "Submit", width = 5, command = submit_callback)
