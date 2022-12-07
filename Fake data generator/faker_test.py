@@ -4,7 +4,8 @@
 Created on Tue Jun 29 23:50:35 2021
 @author: Gyan Krishna
 
-Topic:
+Topic: Fake data generator test!
+Library to install: pip install Faker
 """
 
 
